@@ -21659,6 +21659,10 @@ a.catalog-more:hover {
   margin-left: 5px;
 }
 
+#catalog-list {
+  overflow-x: hidden
+}
+
 .catalog-list-item:hover a {
   background: var(--anzhiyu-main);
   color: var(--anzhiyu-white);
