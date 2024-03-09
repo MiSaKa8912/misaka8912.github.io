@@ -21660,7 +21660,7 @@ a.catalog-more:hover {
 }
 
 #catalog-list {
-  overflow-x: clip
+  overflow-x: hidden
 }
 
 .catalog-list-item:hover a {
