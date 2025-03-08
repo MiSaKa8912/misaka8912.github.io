@@ -6095,6 +6095,7 @@ div .tips {
 }
 .collect h2 {
   margin-bottom: 0;
+  font-size: 30px;
 }
 .collect .collect-desc {
   margin-bottom: 10px;
@@ -6113,6 +6114,13 @@ div .tips {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; /* 主容器居中 */
+  margin: 0 auto; /* 防止边缘空隙 */
 }
 .collect .collect-list a.collect_box {
   color: #fff !important;
@@ -6120,7 +6128,10 @@ div .tips {
 }
 .collect .collect-list .collect_box {
   --w: calc(100% / 6 - 15px);
-  width: var(--w);
+  width: calc(16.666% - 15px); /* 基于6列布局计算 */
+  min-width: 160px; /* 防止过度挤压 */
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0; /* 禁止缩小保持比例 */
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
